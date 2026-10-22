@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" modified="2026-10-22T08:00:00.000Z" agent="ChatGPT" version="24.7.17" type="device">
+  <diagram id="sequence-diagram" name="Sequence Diagram">
+    <mxGraphModel dx="1200" dy="1010" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1010" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Student" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#2563eb;fontColor=#1e293b;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="50" y="35" width="150" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="CampusCareer UI" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#16a34a;fontColor=#14532d;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="315" y="35" width="175" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Backend / API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef3c7;strokeColor=#d97706;fontColor=#78350f;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="580" y="35" width="170" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="MongoDB" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fee2e2;strokeColor=#dc2626;fontColor=#7f1d1d;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="850" y="35" width="155" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="" style="edgeStyle=none;html=1;strokeColor=#9ca3af;strokeWidth=1.2;dashed=1;dashPattern=6 4;endArrow=none;startArrow=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="125" y="87" as="sourcePoint" />
+            <mxPoint x="125" y="950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11" value="" style="edgeStyle=none;html=1;strokeColor=#9ca3af;strokeWidth=1.2;dashed=1;dashPattern=6 4;endArrow=none;startArrow=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="402" y="87" as="sourcePoint" />
+            <mxPoint x="402" y="950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" value="" style="edgeStyle=none;html=1;strokeColor=#9ca3af;strokeWidth=1.2;dashed=1;dashPattern=6 4;endArrow=none;startArrow=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="665" y="87" as="sourcePoint" />
+            <mxPoint x="665" y="950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" value="" style="edgeStyle=none;html=1;strokeColor=#9ca3af;strokeWidth=1.2;dashed=1;dashPattern=6 4;endArrow=none;startArrow=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="927" y="87" as="sourcePoint" />
+            <mxPoint x="927" y="950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="20" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#4b5563;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="125" y="135" as="sourcePoint" />
+            <mxPoint x="402" y="135" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1020" value="1. Open opportunities" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=12;fontColor=#1f2937;strokeColor=none;fillColor=#ffffff;rounded=1;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="138.5" y="108" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="21" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#4b5563;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="402" y="180" as="sourcePoint" />
+            <mxPoint x="665" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1021" value="2. Request opportunity list" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=12;fontColor=#1f2937;strokeColor=none;fillColor=#ffffff;rounded=1;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="411.0" y="153" width="245" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="22" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#4b5563;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="665" y="225" as="sourcePoint" />
+            <mxPoint x="927" y="225" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1022" value="3. Fetch active opportunities" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=12;fontColor=#1f2937;strokeColor=none;fillColor=#ffffff;rounded=1;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="674.0" y="198" width="244" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="23" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#4b5563;strokeWidth=1.5;endArrow=block;endFill=1;dashed=1;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="927" y="270" as="sourcePoint" />
+            <mxPoint x="665" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1023" value="4. Return opportunity list" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=12;fontColor=#1f2937;strokeColor=none;fillColor=#ffffff;rounded=1;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="674.0" y="243" width="244" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="24" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#4b5563;strokeWidth=1.5;endArrow=block;endFill=1;dashed=1;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="665" y="315" as="sourcePoint" />
+            <mxPoint x="402" y="315" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1024" value="5. Return list to UI" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=12;fontColor=#1f2937;strokeColor=none;fillColor=#ffffff;rounded=1;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="411.0" y="288" width="245" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="25" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#4b5563;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="125" y="360" as="sourcePoint" />
+            <mxPoint x="402" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1025" value="6. Select opportunity and click Apply" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=12;fontColor=#1f2937;strokeColor=none;fillColor=#ffffff;rounded=1;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="138.5" y="333" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="26" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#4b5563;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="402" y="405" as="sourcePoint" />
+            <mxPoint x="665" y="405" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1026" value="7. Submit application request" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=12;fontColor=#1f2937;strokeColor=none;fillColor=#ffffff;rounded=1;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="411.0" y="378" width="245" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="27" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#4b5563;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="665" y="450" as="sourcePoint" />
+            <mxPoint x="927" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1027" value="8. Check whether application exists" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=12;fontColor=#1f2937;strokeColor=none;fillColor=#ffffff;rounded=1;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="674.0" y="423" width="244" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="28" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#4b5563;strokeWidth=1.5;endArrow=block;endFill=1;dashed=1;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="927" y="495" as="sourcePoint" />
+            <mxPoint x="665" y="495" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1028" value="9. Return duplicate-check result" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=12;fontColor=#1f2937;strokeColor=none;fillColor=#ffffff;rounded=1;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="674.0" y="468" width="244" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="40" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#6b7280;strokeWidth=1.5;fontColor=#1f2937;verticalAlign=top;align=left;fontSize=13;spacingTop=6;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="45" y="530" width="1085" height="425" as="geometry" />
+        </mxCell>
+        <mxCell id="41" value="" style="edgeStyle=none;html=1;strokeColor=#9ca3af;strokeWidth=1;dashed=1;endArrow=none;startArrow=none;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry" y="700">
+            <mxPoint x="45" y="700" as="sourcePoint" />
+            <mxPoint x="1130" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="42" value="[Duplicate application exists]" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=12;fontStyle=1;fontColor=#7f1d1d;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="55" y="566" width="270" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="43" value="[No existing application]" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=12;fontStyle=1;fontColor=#14532d;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="55" y="706" width="250" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="30" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#4b5563;strokeWidth=1.5;endArrow=block;endFill=1;dashed=1;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="665" y="620" as="sourcePoint" />
+            <mxPoint x="402" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1030" value="10. Return duplicate-application error" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=12;fontColor=#1f2937;strokeColor=none;fillColor=#ffffff;rounded=1;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="411.0" y="593" width="245" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="31" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#4b5563;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="402" y="665" as="sourcePoint" />
+            <mxPoint x="125" y="665" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1031" value="11. Show “Already applied” message" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=12;fontColor=#1f2937;strokeColor=none;fillColor=#ffffff;rounded=1;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="138.5" y="638" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="32" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#4b5563;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="665" y="765" as="sourcePoint" />
+            <mxPoint x="927" y="765" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1032" value="10. Save new application" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=12;fontColor=#1f2937;strokeColor=none;fillColor=#ffffff;rounded=1;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="674.0" y="738" width="244" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="33" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#4b5563;strokeWidth=1.5;endArrow=block;endFill=1;dashed=1;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="927" y="810" as="sourcePoint" />
+            <mxPoint x="665" y="810" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1033" value="11. Confirm application saved" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=12;fontColor=#1f2937;strokeColor=none;fillColor=#ffffff;rounded=1;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="674.0" y="783" width="244" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="34" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#4b5563;strokeWidth=1.5;endArrow=block;endFill=1;dashed=1;dashPattern=6 4;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="665" y="855" as="sourcePoint" />
+            <mxPoint x="402" y="855" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1034" value="12. Return submission success" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=12;fontColor=#1f2937;strokeColor=none;fillColor=#ffffff;rounded=1;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="411.0" y="828" width="245" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="35" value="" style="edgeStyle=none;html=1;rounded=0;strokeColor=#4b5563;strokeWidth=1.5;endArrow=block;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="402" y="900" as="sourcePoint" />
+            <mxPoint x="125" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1035" value="13. Show submission confirmation" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=12;fontColor=#1f2937;strokeColor=none;fillColor=#ffffff;rounded=1;spacing=3;" vertex="1" parent="1">
+          <mxGeometry x="138.5" y="873" width="250" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="44" value="Rule: Only logged-in students can apply. An existing application must not be saved again." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff7ed;strokeColor=#fb923c;fontColor=#7c2d12;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="245" y="965" width="690" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="45" value="alt: application already exists?" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontStyle=1;fontColor=#1f2937;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="55" y="535" width="360" height="24" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
