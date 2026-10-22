@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" modified="2026-10-22T09:15:00.000Z" agent="ChatGPT" version="24.7.17" type="device">
+  <diagram id="campuscareer-system-architecture" name="System Architecture">
+    <mxGraphModel dx="1400" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="CampusCareer — System Architecture" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=24;fontStyle=1;fontColor=#0f172a;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="150" y="18" width="1100" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="subtitle" value="Layered Client–Server Design | Session 9: Software Architecture Design" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=13;fontColor=#475569;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="150" y="58" width="1100" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="student" value="Student" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e2e8f0;strokeColor=#64748b;fontColor=#1e293b;fontSize=14;fontStyle=1;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="300" y="108" width="180" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="admin" value="Placement Administrator" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e2e8f0;strokeColor=#64748b;fontColor=#1e293b;fontSize=14;fontStyle=1;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="820" y="108" width="240" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="presentation" value="1. PRESENTATION LAYER" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;spacingTop=10;spacingLeft=14;fontSize=16;fontStyle=1;strokeWidth=2;fillColor=#eff6ff;strokeColor=#60a5fa;fontColor=#1e3a8a;" vertex="1" parent="1">
+          <mxGeometry x="100" y="190" width="1200" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="application" value="2. APPLICATION / BUSINESS LAYER — Node.js + Express.js" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;spacingTop=10;spacingLeft=14;fontSize=16;fontStyle=1;strokeWidth=2;fillColor=#f0fdf4;strokeColor=#4ade80;fontColor=#166534;" vertex="1" parent="1">
+          <mxGeometry x="100" y="395" width="1200" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="dataaccesslayer" value="3. DATA ACCESS LAYER" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;spacingTop=10;spacingLeft=14;fontSize=16;fontStyle=1;strokeWidth=2;fillColor=#fffbeb;strokeColor=#fbbf24;fontColor=#92400e;" vertex="1" parent="1">
+          <mxGeometry x="100" y="675" width="1200" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="databaselayer" value="4. DATABASE LAYER — MongoDB" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;spacingTop=10;spacingLeft=14;fontSize=16;fontStyle=1;strokeWidth=2;fillColor=#f5f3ff;strokeColor=#a78bfa;fontColor=#5b21b6;" vertex="1" parent="1">
+          <mxGeometry x="100" y="830" width="1200" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="frontend" value="&lt;b&gt;Browser-based Web UI&lt;/b&gt;&lt;br&gt;HTML • CSS • JavaScript&lt;br&gt;Student Dashboard • Opportunities • Applications • Profile • Admin pages" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dbeafe;strokeColor=#3b82f6;fontColor=#1e3a8a;fontSize=14;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="390" y="230" width="620" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="actor_student" value="uses" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#475569;strokeWidth=2;endArrow=block;endFill=1;fontSize=12;fontColor=#334155;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="student" target="frontend">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="175" />
+              <mxPoint x="390" y="205" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="actor_admin" value="uses" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#475569;strokeWidth=2;endArrow=block;endFill=1;fontSize=12;fontColor=#334155;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="admin" target="frontend">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="940" y="175" />
+              <mxPoint x="940" y="205" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="express" value="&lt;b&gt;Express.js REST API&lt;/b&gt;&lt;br&gt;Routes and request handling" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#22c55e;fontColor=#14532d;fontSize=14;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="440" y="430" width="520" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="auth" value="&lt;b&gt;Authentication &amp; Authorization&lt;/b&gt;&lt;br&gt;Login • role checks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ecfccb;strokeColor=#84cc16;fontColor=#365314;fontSize=13;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="155" y="520" width="300" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="opportunity" value="&lt;b&gt;Opportunity Management&lt;/b&gt;&lt;br&gt;List • view • add/delete (admin)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ecfccb;strokeColor=#84cc16;fontColor=#365314;fontSize=13;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="550" y="520" width="300" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="applications" value="&lt;b&gt;Application Management&lt;/b&gt;&lt;br&gt;Apply • duplicate check • status" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ecfccb;strokeColor=#84cc16;fontColor=#365314;fontSize=13;spacing=6;" vertex="1" parent="1">
+          <mxGeometry x="945" y="520" width="300" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="frontend_backend" value="HTTPS / JSON REST API" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#475569;strokeWidth=2;endArrow=block;endFill=1;fontSize=12;fontColor=#334155;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="frontend" target="express">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="api_auth" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#475569;strokeWidth=2;endArrow=block;endFill=1;fontSize=12;fontColor=#334155;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="express" target="auth">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="495" />
+              <mxPoint x="305" y="495" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="api_opportunity" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#475569;strokeWidth=2;endArrow=block;endFill=1;fontSize=12;fontColor=#334155;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="express" target="opportunity">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="495" />
+              <mxPoint x="700" y="515" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="api_applications" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#475569;strokeWidth=2;endArrow=block;endFill=1;fontSize=12;fontColor=#334155;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="express" target="applications">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="495" />
+              <mxPoint x="1095" y="495" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dataaccess" value="&lt;b&gt;Database Access / Models&lt;/b&gt;&lt;br&gt;Backend functions for reading and writing records; database logic stays out of the frontend" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef3c7;strokeColor=#f59e0b;fontColor=#78350f;fontSize=14;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="330" y="710" width="740" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="app_to_data" value="validated CRUD operations" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#475569;strokeWidth=2;endArrow=block;endFill=1;fontSize=12;fontColor=#334155;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="applications" target="dataaccess">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1095" y="635" />
+              <mxPoint x="1095" y="695" />
+              <mxPoint x="700" y="695" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="shared_note" value="All backend modules use the data-access layer as needed." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=11;fontColor=#78350f;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="375" y="765" width="650" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="mongodb" value="&lt;b&gt;MongoDB&lt;/b&gt;&lt;br&gt;Persistent application data" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ede9fe;strokeColor=#8b5cf6;fontColor=#4c1d95;fontSize=14;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="190" y="865" width="270" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="collections" value="&lt;b&gt;Collections&lt;/b&gt;&lt;br&gt;Students • Admins • Opportunities • Applications" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ede9fe;strokeColor=#8b5cf6;fontColor=#4c1d95;fontSize=14;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="560" y="865" width="650" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="data_to_db" value="MongoDB queries" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#475569;strokeWidth=2;endArrow=block;endFill=1;fontSize=12;fontColor=#334155;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="dataaccess" target="mongodb">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="790" />
+              <mxPoint x="325" y="790" />
+              <mxPoint x="325" y="860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="db_collections" value="stores records" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#475569;strokeWidth=2;startArrow=block;startFill=1;endArrow=block;endFill=1;fontSize=12;fontColor=#334155;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="mongodb" target="collections">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="design_note" value="&lt;b&gt;Design choices:&lt;/b&gt; The frontend never connects directly to MongoDB. Authentication, authorization, input validation and duplicate-application rules are checked by the backend. A single Express backend is enough for the current project; microservices are not required." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8fafc;strokeColor=#94a3b8;fontColor=#334155;fontSize=12;spacing=7;" vertex="1" parent="1">
+          <mxGeometry x="170" y="965" width="1060" height="38" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
