@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f7fb">
+  <title>CampusCareer — Student Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#dashboard" aria-label="CampusCareer home">
+        <span class="brand-mark">CC</span>
+        <span class="brand-name">Campus<span>Career</span><small>STUDENT PORTAL</small></span>
+      </a>
+
+      <div class="side-label">WORKSPACE</div>
+      <nav class="side-nav" aria-label="Main navigation">
+        <button class="nav-item active" data-page="dashboard"><span class="nav-icon">⌂</span> Overview</button>
+        <button class="nav-item" data-page="opportunities"><span class="nav-icon">▤</span> Opportunities <span class="nav-count" id="opportunityCount">06</span></button>
+        <button class="nav-item" data-page="applications"><span class="nav-icon">◷</span> My applications</button>
+        <button class="nav-item" data-page="profile"><span class="nav-icon">♙</span> My profile</button>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="help-card">
+          <span class="help-icon">✦</span>
+          <strong>One step closer.</strong>
+          <p>Your next opportunity could be the one that starts it all.</p>
+          <button class="text-button" data-page="opportunities">Explore roles <span>→</span></button>
+        </div>
+        <div class="sidebar-user">
+          <div class="avatar">ST</div>
+          <div class="user-meta"><strong id="sideName">Student</strong><small>Student account</small></div>
+          <button class="more-button" aria-label="Open profile" data-page="profile">•••</button>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu" aria-label="Toggle menu">☰</button>
+        <div class="breadcrumb"><span>Workspace</span><b>/</b><strong id="crumbTitle">Overview</strong></div>
+        <div class="topbar-actions">
+          <span class="status-dot"></span><span class="status-text">Student portal</span>
+          <div class="avatar avatar-small" id="topAvatar">ST</div>
+        </div>
+      </header>
+
+      <div class="page-wrap">
+        <section class="page active" id="page-dashboard">
+          <div class="welcome-row">
+            <div>
+              <p class="eyebrow">THURSDAY · YOUR CAREER SPACE</p>
+              <h1>Good to see you, <span id="welcomeName">Student</span> <span class="wave">✦</span></h1>
+              <p class="subheading">A little progress today can open a big door tomorrow.</p>
+            </div>
+            <button class="button button-primary" data-page="opportunities">Find opportunities <span>↗</span></button>
+          </div>
+
+          <section class="hero-panel">
+            <div class="hero-copy">
+              <span class="hero-pill"><span class="pill-dot"></span> YOUR NEXT CHAPTER</span>
+              <h2>Make your<br><em>potential</em> visible.</h2>
+              <p>Discover internships and placement roles, apply with confidence, and keep every application in one place.</p>
+              <button class="button button-light" data-page="opportunities">Browse opportunities <span>→</span></button>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+              <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+              <div class="art-card art-card-back"><span class="mini-label">APPLICATION</span><div class="mini-line"></div><div class="mini-line short"></div><div class="mini-status">In review</div></div>
+              <div class="art-card art-card-front"><div class="art-card-top"><span class="spark">✦</span><span class="mini-label">CAREER MOMENTUM</span></div><div class="art-number">01<span>/</span>day</div><div class="art-caption">Start with one application.</div><div class="art-progress"><span></span></div></div>
+              <div class="floating-star">✦</div><div class="floating-dot"></div>
+            </div>
+          </section>
+
+          <div class="section-heading">
+            <div><h2>Your activity</h2><p>A quick snapshot of your placement journey.</p></div>
+          </div>
+          <div class="stats-grid">
+            <article class="stat-card"><div class="stat-icon violet">▤</div><div class="stat-label">Open opportunities</div><div class="stat-value" id="statOpen">06</div><div class="stat-foot"><span class="tiny-dot green-dot"></span> Ready to explore</div></article>
+            <article class="stat-card"><div class="stat-icon blue">↗</div><div class="stat-label">Applications sent</div><div class="stat-value" id="statApplied">00</div><div class="stat-foot">Your submitted applications</div></article>
+            <article class="stat-card"><div class="stat-icon amber">◷</div><div class="stat-label">Under review</div><div class="stat-value" id="statReview">00</div><div class="stat-foot">Waiting for an update</div></article>
+            <article class="stat-card"><div class="stat-icon mint">✓</div><div class="stat-label">Shortlisted</div><div class="stat-value" id="statSelected">00</div><div class="stat-foot">Keep the momentum going</div></article>
+          </div>
+
+          <div class="content-grid">
+            <section class="content-panel">
+              <div class="panel-heading"><div><h2>Recommended for you</h2><p>Explore a few opportunities to get started.</p></div><button class="link-button" data-page="opportunities">View all <span>→</span></button></div>
+              <div class="recommended-list" id="recommendedList"></div>
+            </section>
+            <section class="content-panel journey-panel">
+              <div class="panel-heading"><div><h2>Your next steps</h2><p>Small actions, steady progress.</p></div></div>
+              <div class="journey-step"><span class="step-number done">✓</span><div><strong>Explore the portal</strong><p>You’re already here. Nice start.</p></div></div>
+              <div class="journey-step"><span class="step-number" id="profileStep">2</span><div><strong>Complete your profile</strong><p>Add details so your profile is ready.</p></div><button class="step-arrow" data-page="profile">→</button></div>
+              <div class="journey-step"><span class="step-number" id="applyStep">3</span><div><strong>Apply to a role</strong><p>Take the next step when you’re ready.</p></div><button class="step-arrow" data-page="opportunities">→</button></div>
+              <div class="journey-note"><span>✦</span> This demo stores your activity in this browser only.</div>
+            </section>
+          </div>
+        </section>
+
+        <section class="page" id="page-opportunities">
+          <div class="page-title-row"><div><p class="eyebrow">FIND YOUR FIT</p><h1>Explore opportunities</h1><p class="subheading">Find a role that matches where you want to go.</p></div></div>
+          <div class="filter-bar">
+            <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search roles, companies or skills..." aria-label="Search opportunities"><kbd>⌕</kbd></label>
+            <select id="typeFilter" aria-label="Filter by opportunity type"><option value="All">All types</option><option value="Internship">Internship</option><option value="Placement">Placement</option></select>
+            <select id="sortFilter" aria-label="Sort opportunities"><option value="recommended">Recommended</option><option value="title">Title A–Z</option></select>
+          </div>
+          <div class="results-line"><span id="resultsCount">6 opportunities</span><span>Demo listings · Sample data</span></div>
+          <div class="opportunity-grid" id="opportunityGrid"></div>
+          <div class="no-results hidden" id="noResults"><div class="no-results-icon">⌕</div><h3>No matching opportunities</h3><p>Try another keyword or change your filters.</p><button class="button button-outline" id="clearFilters">Clear filters</button></div>
+        </section>
+
+        <section class="page" id="page-applications">
+          <div class="page-title-row"><div><p class="eyebrow">YOUR PROGRESS</p><h1>My applications</h1><p class="subheading">Keep track of the roles you’ve applied for.</p></div></div>
+          <div class="application-summary" id="applicationSummary"></div>
+          <section class="content-panel application-panel">
+            <div class="panel-heading"><div><h2>Application tracker</h2><p>Updates are shown here for this demo.</p></div><span class="demo-badge">LOCAL DEMO</span></div>
+            <div id="applicationList"></div>
+          </section>
+        </section>
+
+        <section class="page" id="page-profile">
+          <div class="page-title-row"><div><p class="eyebrow">MAKE IT YOURS</p><h1>My profile</h1><p class="subheading">Keep your basic details up to date.</p></div></div>
+          <div class="profile-layout">
+            <section class="content-panel profile-card">
+              <div class="profile-banner"></div>
+              <div class="profile-identity"><div class="avatar avatar-large" id="profileAvatar">ST</div><div><h2 id="profileHeading">Student profile</h2><p>Student account</p></div></div>
+              <form id="profileForm" class="profile-form">
+                <div class="form-grid">
+                  <label>Full name<input id="fullName" name="fullName" placeholder="Enter your name" required maxlength="60"></label>
+                  <label>Email address<input id="email" name="email" type="email" placeholder="you@example.com" required></label>
+                  <label>Course / branch<input id="course" name="course" placeholder="e.g. B.Tech Information Technology"></label>
+                  <label>Graduation year<input id="graduationYear" name="graduationYear" type="number" min="2020" max="2040" placeholder="e.g. 2028"></label>
+                </div>
+                <div class="form-actions"><span id="profileMessage" role="status"></span><button class="button button-primary" type="submit">Save profile <span>✓</span></button></div>
+              </form>
+            </section>
+            <aside class="profile-tip"><span class="tip-icon">✦</span><h3>Your profile, your first impression.</h3><p>Keep your contact and education details accurate. A real application system can later use these details to support applications.</p><div class="tip-divider"></div><div class="tip-row"><span>Profile data</span><strong>Saved locally</strong></div><div class="tip-row"><span>Backend connection</span><strong class="not-connected">Not connected</strong></div></aside>
+          </div>
+        </section>
+
+        <footer class="page-footer"><span>CampusCareer <span class="footer-dot">•</span> Student Placement &amp; Internship Management</span><span>Academic project prototype</span></footer>
+      </div>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
